@@ -241,6 +241,12 @@ inner join payment
 on payment.rental_id = rental.rental_id
 group by name
 limit 5;
+-- 8b. How would you display the view that you created in 8a?
+select * from top_5_by_genre;
+-- 8c. You find that you no longer need the view `top_five_genres`. Write a query 
+-- to delete it.
+drop view top_5_by_genre;
+
 
             
 
